@@ -32,8 +32,8 @@ def savings(gross_pay, tax_rate, expenses):
     # Stay within the function. Only use the parameters as input. The function should return your answer.
     import math
     
-    gross_pay = math.floor(gross_pay - (tax_rate * gross_pay))
-    savings = gross_pay - expenses
+    after_tax_pay = math.floor(gross_pay - (tax_rate * gross_pay))
+    savings = after_tax_pay - expenses
 
     return(savings)
 
@@ -69,8 +69,8 @@ def material_waste(total_material, material_units, num_jobs, job_consumption):
     '''
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-    job_consumption = num_jobs * job_consumption
-    total_material = total_material - job_consumption
+    total_consumption = num_jobs * job_consumption
+    total_material = total_material - total_consumption
 
     return str(total_material) + material_units
 
