@@ -245,10 +245,10 @@ def telephone_decipher(telephone_string):
     deciphered = ""
     
     for i,x in enumerate(telephone_string_list):
-        if i == 0 or x != telephone_string_list[i-1]: # num at x is not equal to the num before it
+        if i == 0 or x != telephone_string_list[i-1]:
             subgroup = [x]
             grouped_list.append(subgroup)
-        else: # add same consecutive number to the subgroup
+        else:
             subgroup.append(x)
     
     for j in grouped_list:
