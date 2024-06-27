@@ -244,12 +244,12 @@ def telephone_decipher(telephone_string):
     subgroup = []
     deciphered = ""
     
-    for i,x in enumerate(telephone_string_list):
-        if i == 0 or x != telephone_string_list[i-1]:
-            subgroup = [x]
+    for index,num in enumerate(telephone_string_list):
+        if index == 0 or num != telephone_string_list[index - 1]: 
+            subgroup = [num]
             grouped_list.append(subgroup)
-        else:
-            subgroup.append(x)
+        else: 
+            subgroup.append(num)
     
     for j in grouped_list:
         grouped_list[grouped_list.index(j)] = ["".join(j)]
